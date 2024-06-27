@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+    <title>Age calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <div class="heading">
-        <h1>Age Calculator</h1>
-    </div>
+    <div class="heading"><h1>Age calculator</h1></div>
     <div class="container">
         <div class="input">
-            <input type="date" name="DOB" id="dob">
+            <input type="date" id="date" />
             <button onclick="ageCalc()">Calculate</button>
         </div>
         <div class="output">
             <div>
-                <span class="years"></span><p>Years</p>
+                <span id="years"> </span>
+                <p>YEARS</p>
             </div>
             <div>
-                <span class="months"></span><p>Months</p>
+                <span id="months"> </span>
+                <p>MONTHS</p>
             </div>
             <div>
-                <span class="days"></span><p>Days</p>
+                <span id="days"> </span>
+                <p>DAYS</p>
             </div>
         </div>
     </div>

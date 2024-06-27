@@ -1,4 +1,4 @@
-const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; //list of days of the month
+const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function ageCalc() {
 	let today = new Date();
@@ -13,11 +13,11 @@ function ageCalc() {
 	let currentMonth = today.getMonth() + 1;
 	let currentDay = today.getDate();
 
-	leapChecker(currentYear); //This function checks wether input year is leap year or not
+	leapChecker(currentYear);
 
 	if (birthDetails.year > currentYear || (birthDetails.month > currentMonth && birthDetails.year == currentYear) ||
 		(birthDetails.date > currentDay && birthDetails.month == currentMonth && birthDetails.year == currentYear)) {
-		alert("Enter Valid Date"); //Exception Handling
+		alert("Enter Valid Date");
 	}
 	birthYear = currentYear - birthDetails.year;
 	if (currentMonth >= birthDetails.month) {
@@ -28,6 +28,7 @@ function ageCalc() {
 	}
 	if (currentDay >= birthDetails.date) {
 		birthDate = currentDay - birthDetails.date;
+
 	} else {
 		birthMonth--;
 		let days = months[currentMonth - 2];
@@ -40,16 +41,16 @@ function ageCalc() {
 	display(birthDate, birthMonth, birthYear);
 }
 
+function display(bdate, bmonth, byear) {
+	document.getElementById("years").textContent = byear;
+	document.getElementById("months").textContent = bmonth;
+	document.getElementById("days").textContent = bdate;
+}
+
 function leapChecker(year) {
 	if (year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)) {
 		months[1] = 29;
 	} else {
 		months[1] = 28;
 	}
-}
-
-function display(bdate, bmonth, byear) {
-	document.getElementById("years").textContent = byear;
-	document.getElementById("months").textContent = bmonth;
-	document.getElementById("days").textContent = bdate;
 }
