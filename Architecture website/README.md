@@ -22,6 +22,10 @@ This is a basic Architecture Website Template built using HTML, CSS, and JavaScr
 
 <br>
 
+### Made with
+
+---
+
 ![HTML](images/HTML5.png)
 ![CSS](images/CSS.png)
 ![JS](images/JavaScript.png)
