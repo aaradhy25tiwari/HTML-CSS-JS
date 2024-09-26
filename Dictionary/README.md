@@ -1,14 +1,28 @@
 # Wordictionary
 
-[Wordictionary](https://yash-barjatya.github.io/Dictionary/ "Wordictionary: A word dictionary website") : A _Word dictionary_ , where you can search for ***meaning***, ***pronounciation***, ***example*** (use of that word in sentences) of millions of  words and also ***bookmark*** the words for future references. 
+Wordictionary: A _Word dictionary_ , where you can search for ***meaning***, ***pronounciation***, ***example*** (use of that word in sentences) of millions of  words and also ***bookmark*** the words for future references. 
 
 - - - -
 
- It is written in :
+<h3>Used Technologies</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+</ul>
 
-*   _HTML_
-*   _CSS_
-*   _JS_
+### Steps to Use:
+---
+
+- Download or clone the repository
+```
+git clone https://github.com/aaradhy25tiwari/HTML-CSS-JS.git
+```
+- Go to the directory
+- Run the index.html file
+- Just Type the movie name you want to know the details of, and then press Enter.
+- After that it will automatically display Details and TMDB rating.
+
                                 
 - - - -
 1. **Search word and get not only the  meaning of the word but also learn about its phonetic.**
@@ -30,5 +44,6 @@
 
 - - - -
 ## Hope you like it !!
+<br>
 
-_Note_ : For best experience view in desktop or laptop.
+## Happy Coding!
