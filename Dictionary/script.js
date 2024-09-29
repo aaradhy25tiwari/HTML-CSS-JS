@@ -1,11 +1,7 @@
 //console.log("connected")
 
 let loading_animation = document.getElementById('loading_animation');
-/*
-$(window).load(function () {
-    // Animate loader off screen
-    $("#loading_animation").fadeOut("slow");;
-});*/
+
 $(window).on('load', function () {
     $('#loading_animation').hide();
 })
@@ -81,7 +77,7 @@ search_btn.addEventListener('click', async function () {
         setTimeout(function () {
             loading_animation.style.display = "none";
             word_history_section.style.display = "block";
-        }, 0990)
+        }, 990)
         setTimeout(function () {
             show_result.style.display = "block";
 
