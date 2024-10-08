@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="Images/pokeball.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+    <button onclick="fetchData()">Fetch Pokemon</button><br>
+    
+    <div id="pokedex-container">
+        <img src="./images/pokedex.png" alt="Pokedex Background" id="pokedex-background" height="60%" width="60%">
+        
+        <!-- Adjusted positioning of the Pokemon sprite to align with the pokedex background -->
+        <img src="" alt="Pokemon Sprite" id="pokemonSprite" height="180" style="display: none; position: absolute; top: 28%; left: 8%;">
+        
+        <!-- Sections for Pokemon data -->
+        <div id="pokemonNameSection"></div>
+        <div id="pokemonWeightSection"></div>
+        <div id="pokemonTypeSection"></div>
+    </div>
+
+    <script src="./script.js"></script> 
+</body>
+</html>
