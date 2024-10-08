@@ -1,0 +1,76 @@
+body {
+    background-color: #5ba9ee;
+}
+
+.input {
+    background-color: #25252f;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+input, button {
+    height: 50px;
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+button {
+    width: 30%;
+    float: right;
+    background-color: blueviolet;
+}
+
+/* Adjustments for the sections */
+#pokemonNameSection {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none; 
+    position: absolute; 
+    top: 40%; 
+    left: 40%;
+}
+
+#pokemonWeightSection {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none; 
+    position: absolute; 
+    top: 78%; 
+    left: 12%;
+}
+
+#pokemonTypeSection {
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none; 
+    position: absolute; 
+    top: 85%; 
+    left: 40%;
+}
+
+#pokedex-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+#pokemonSprite {
+    display: none;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+}
