@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Fun Facts</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .fact-display {
+            margin-top: 20px;
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ISRO Fun Facts</h1>
+        <button id="factButton">Show a Fun Fact</button>
+        <div id="factDisplay" class="fact-display"></div>
+    </div>
+    <script>
+        const facts = [
+            {
+                "fact": "ISRO was founded in 1969.",
+                "description": "The Indian Space Research Organisation was established to harness space technology for national development."
+            },
+            {
+                "fact": "First Indian satellite was Aryabhata.",
+                "description": "Aryabhata was launched on April 19, 1975, making India the sixth country to develop its own satellite."
+            },
+            {
+                "fact": "PSLV is known as the workhorse of ISRO.",
+                "description": "The Polar Satellite Launch Vehicle (PSLV) has launched over 300 satellites from various countries."
+            },
+            {
+                "fact": "Chandrayaan-1 discovered water on the Moon.",
+                "description": "Launched in 2008, Chandrayaan-1 confirmed the presence of water molecules on the lunar surface."
+            },
+            {
+                "fact": "Mangalyaan was India's first interplanetary mission.",
+                "description": "Launched in 2013, the Mars Orbiter Mission (Mangalyaan) made India the first Asian nation to reach Martian orbit."
+            },
+            {
+                "fact": "ISRO has a significant focus on rural development.",
+                "description": "ISRO uses satellite technology for applications in agriculture, forestry, and disaster management."
+            },
+            {
+                "fact": "ISRO's budget is relatively low compared to other space agencies.",
+                "description": "Despite a smaller budget, ISRO has achieved remarkable success in space exploration and satellite launches."
+            },
+            {
+                "fact": "ISRO has launched satellites for over 30 countries.",
+                "description": "ISRO's commercial arm, Antrix Corporation, has successfully launched satellites for various nations."
+            },
+            {
+                "fact": "The ISRO logo features a stylized depiction of a satellite.",
+                "description": "The logo symbolizes ISRO's commitment to space technology and its applications."
+            },
+            {
+                "fact": "ISRO's headquarters is located in Bengaluru.",
+                "description": "The city is known as the 'Silicon Valley of India' and is a hub for technology and innovation."
+            },
+            {
+                "fact": "PSLV is known as the workhorse of ISRO.",
+                "description": "The Polar Satellite Launch Vehicle (PSLV) has launched over 300 satellites from various countries."
+            },
+            {
+                "fact": "Chandrayaan-1 discovered water on the Moon.",
+                "description": "Launched in 2008, Chandrayaan-1 confirmed the presence of water molecules on the lunar surface."
+            },
+            {
+                "fact": "Mangalyaan was India's first interplanetary mission.",
+                "description": "Launched in 2013, the Mars Orbiter Mission (Mangalyaan) made India the first Asian nation to reach Martian orbit."
+            },
+            {
+                "fact": "ISRO has launched satellites for over 30 countries.",
+                "description": "ISRO's commercial arm, Antrix Corporation, has successfully launched satellites for various nations."
+            },
+            {
+                "fact": "The ISRO logo features a stylized depiction of a satellite.",
+                "description": "The logo symbolizes ISRO's commitment to space technology and its applications."
+            },
+            {
+                "fact": "ISRO launched the GSAT-11, India's heaviest satellite.",
+                "description": "GSAT-11, launched in 2018, weighs about 5,854 kg and enhances broadband connectivity across India."
+            },
+            {
+                "fact": "ISRO developed the NavIC navigation system.",
+                "description": "NavIC is India's own regional satellite navigation system, providing accurate positioning services over India and surrounding regions."
+            },
+            {
+                "fact": "ISRO's GSLV Mk III launched India's second lunar mission, Chandrayaan-2.",
+                "description": "Chandrayaan-2 was launched in July 2019 to further explore the Moon, including its south pole."
+            },
+            {
+                "fact": "ISRO successfully launched 104 satellites in a single mission.",
+                "description": "In February 2017, ISRO set a world record by launching 104 satellites aboard PSLV-C37."
+            },
+            {
+                "fact": "ISRO's first mission to the Sun is called Aditya-L1.",
+                "description": "Aditya-L1, launched in 2023, studies the solar corona and solar emissions."
+            },
+            {
+                "fact": "ISRO has a dedicated spaceport called Satish Dhawan Space Centre.",
+                "description": "Located in Sriharikota, Andhra Pradesh, it is the primary launch site for ISRO's satellite launches."
+            },
+            {
+                "fact": "ISRO's Vikram Sarabhai Space Centre is named after the father of the Indian space program.",
+                "description": "Dr. Vikram Sarabhai was a visionary scientist who played a crucial role in establishing ISRO."
+            }
+        ];
+
+        document.getElementById('factButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            const selectedFact = facts[randomIndex];
+            const factDisplay = document.getElementById('factDisplay');
+            
+            factDisplay.innerHTML = `<strong>${selectedFact.fact}</strong><p>${selectedFact.description}</p>`;
+            factDisplay.style.opacity = 0; // Reset opacity for fade-in effect
+            setTimeout(() => {
+                factDisplay.style.opacity = 1; // Fade in
+            }, 10);
+        });
+    </script>
+</body>
+</html>
